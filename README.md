@@ -1,17 +1,20 @@
 # terraform-aws-rds_cluster
+ ## Please use below code
 
 ```
 module "aws" {
-    source = ""
+    source = "aws_rds_cluster"
 
-cluster_identifier      = "sldfjsldkfj"
-  engine                  = "write your engine"
-  engine_version          = "sdgdfhdfh"
-  availability_zones      = var.availability_zones
-  database_name           = var.database_name
-  master_username         = var.master_username
-  master_password         = var.master_password
-# backup_retention_period = var.backup_retention_period
-  preferred_backup_window = var.preferred_backup_window
+  cluster_identifier      = "aurora-cluster-demo"
+  engine                  = "aurora-mysql"
+  engine_version          = "5.7.mysql_aurora.2.07.2"
+  availability_zones      = "[“us-east-2a”, “us-east-2b”, “us-east-2c”]"
+  database_name           = "db"
+  master_username         = "foo"
+  master_password         = "MYPROJECT"
+  preferred_backup_window = ""07:00-09:00""
   skip_final_snapshot  = true
+  region = "us-east-2"
+    
 }
+```
