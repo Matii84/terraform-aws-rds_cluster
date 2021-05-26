@@ -2,7 +2,7 @@
  ## Please use below code
 
 ```
-module "rds_cluster" {
+  module "rds_cluster" {
   source  = "Matii84/rds_cluster/aws"
   version = "1.0.0" 
   
@@ -15,7 +15,6 @@ module "rds_cluster" {
   master_password         = "MYPROJECT"
   preferred_backup_window = "07:00-09:00"
   skip_final_snapshot  = true
-  region = "us-east-2"
-    
+  region = "us-east-2"      
 }
 ```
