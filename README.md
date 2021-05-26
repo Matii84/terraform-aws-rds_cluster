@@ -2,9 +2,10 @@
  ## Please use below code
 
 ```
-module "aws" {
-    source = "aws_rds_cluster"
-
+module "rds_cluster" {
+  source  = "Matii84/rds_cluster/aws"
+  version = "1.0.0" 
+  
   cluster_identifier      = "aurora-cluster-demo"
   engine                  = "aurora-mysql"
   engine_version          = "5.7.mysql_aurora.2.07.2"
