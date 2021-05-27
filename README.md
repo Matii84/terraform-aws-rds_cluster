@@ -4,7 +4,7 @@
 ```
   module "rds_cluster" {
   source  = "Matii84/rds_cluster/aws"
-  version = "1.0.0" 
+  version = "1.0.2" 
   
   cluster_identifier      = "aurora-cluster-demo"
   engine                  = "aurora-mysql"
