@@ -15,6 +15,7 @@
   master_password         = "MYPROJECT"
   preferred_backup_window = "07:00-09:00"
   skip_final_snapshot  = true
-  region = "us-east-2"      
+  region = "us-east-2" 
+  subnet_ids = ["subnet-05d8f5c18eb5835cc","subnet-0c318d56b15a0b068","subnet-072d5daecb76219cc"]
 }
 ```
