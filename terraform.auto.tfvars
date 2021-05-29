@@ -9,4 +9,4 @@ master_password    = "NEWPROJECT"
 preferred_backup_window = "07:00-09:00"
 skip_final_snapshot     = true
 region                  = "us-east-2"
-subnet_ids = ["subnet-05d8f5c18eb5835cc","subnet-0c318d56b15a0b068","subnet-072d5daecb76219cc"]
+subnet_ids = ["subnet-0e219ee11fee8e3c1","subnet-05e0994fb3e1dbf7b","subnet-0b29b0fb377d0c967"]
