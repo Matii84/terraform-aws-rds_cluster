@@ -2,10 +2,18 @@
  ## Please use below code
 
 ```
-  module "rds_cluster" {
+ module "rds_cluster" {
   source  = "Matii84/rds_cluster/aws"
   
+resource "aws_rds_cluster_instance" "cluster_instances" {
+  count              = 2
+  identifier         = var.cluster_identifier
+  cluster_identifier = var.cluster_identifier
+  instance_class     = "db.r4.large"
+  engine             = var.engine
+  engine_version     = var.engine_version
   
+} 
   cluster_identifier      = "aurora-cluster-demo"
   engine                  = "aurora-mysql"
   engine_version          = "5.7.mysql_aurora.2.07.2"
