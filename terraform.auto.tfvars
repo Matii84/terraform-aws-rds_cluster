@@ -9,4 +9,5 @@ master_password    = "NEWPROJECT"
 preferred_backup_window = "07:00-09:00"
 skip_final_snapshot     = true
 region                  = "us-east-2"
-subnet_ids = ["subnet-0e219ee11fee8e3c1","subnet-05e0994fb3e1dbf7b","subnet-0b29b0fb377d0c967"]
+subnet_ids = ["subnet-021c9e6f1801d8e4f","subnet-0772be504d16de293","subnet-0847f89826534e67d"]
+instance_class     = "db.r4.large"

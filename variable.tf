@@ -12,6 +12,7 @@ variable "master_password" {}
 variable "preferred_backup_window" {}
 variable "skip_final_snapshot" {}
 variable "region" {}
+variable "instance_class" {}
 variable "subnet_ids" {
   type = list(any)
 }

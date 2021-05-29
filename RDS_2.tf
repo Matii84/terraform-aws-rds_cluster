@@ -2,7 +2,7 @@ resource "aws_rds_cluster_instance" "cluster_instances" {
   count              = 2
   identifier         = var.cluster_identifier
   cluster_identifier = var.cluster_identifier
-  instance_class     = "db.r4.large"
+  instance_class     = var.instance_class
   engine             = var.engine
   engine_version     = var.engine_version
 }
